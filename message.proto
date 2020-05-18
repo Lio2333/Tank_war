@@ -1,0 +1,36 @@
+syntax="proto3";
+
+message prome
+{
+	uint64 state=1;
+	Account account=2;
+	PVP pvp=3;
+	Game game=4;
+	Bullet bullet=5;
+}
+
+message Account
+{
+	uint64 uid=1;
+	string name=2;
+	string password=3;
+}
+
+message PVP
+{
+	uint64 setout=1;
+	uint64 relog=2;
+}
+
+message Game
+{
+	float tankx=1;
+	float tanky=2;
+	uint64 dire=3;
+}
+
+message Bullet
+{
+	float bulletx=1;
+	float bullety=2;
+}
